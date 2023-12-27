@@ -19,13 +19,11 @@ allNumbers.forEach((btn) => {
         num1 = e.target.innerHTML * 1;
         document.querySelector("span").innerHTML = num1;
         displayValue = num1;
-        console.log(num1);
       } else {
         num1 = displayValue + e.target.innerHTML;
         displayValue = num1;
         num1 = num1 * 1;
         document.querySelector("span").innerHTML = displayValue;
-        console.log(num1);
         return num1;
       }
     }
@@ -34,13 +32,11 @@ allNumbers.forEach((btn) => {
         num2 = e.target.innerHTML * 1;
         document.querySelector("span").innerHTML = num2;
         displayValue = num2;
-        console.log(num2);
       } else {
         num2 = displayValue + e.target.innerHTML;
         displayValue = num2;
         num2 = num2 * 1;
         document.querySelector("span").innerHTML = displayValue;
-        console.log(num2);
         return num2;
       }
     }
@@ -127,7 +123,11 @@ function operate() {
     if (operator == 4) {
       multiply();
     }
-    displayValue = result;
+    if (result % 1 != 0) {
+      displayValue = +result.toFixed(2);
+    } else {
+      displayValue = result;
+    }
     document.querySelector("span").innerHTML = displayValue;
     num1 = 0;
     num2 = 0;
