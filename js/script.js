@@ -123,7 +123,6 @@ function operate() {
     if (operator == 4) {
       multiply();
     }
-    console.log(result);
     if (result % 1 != 0 && result != "error") {
       displayValue = +result.toFixed(2);
     } else {
