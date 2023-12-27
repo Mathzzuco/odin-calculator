@@ -1,0 +1,63 @@
+.container {
+  margin: 0 auto;
+  width: 800px;
+  border: solid 1px #4d4b4b;
+  margin-top: 5%;
+  background-color: #291b1b;
+  border-radius: 25px;
+}
+
+.display {
+  display: flex;
+  width: 760px;
+  height: 110px;
+  border: solid 1px black;
+  align-items: center;
+  float: right;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-right: 19px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  background-color: #c7bebe;
+}
+
+span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 100px;
+  margin-left: auto;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  padding-right: 9px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+button {
+  font-size: 50px;
+  width: 22%;
+  height: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.num-btn {
+  background-color: #8e8ef7;
+}
+
+.cal-btn {
+  background-color: #2e812e;
+}
+
+.clear-btn {
+  background-color: #f05151;
+}
+
+.equal-btn {
+  background-color: #0fd60f;
+}
